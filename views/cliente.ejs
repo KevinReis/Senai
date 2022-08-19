@@ -1,0 +1,29 @@
+<%- include ("partials/header.ejs") %>
+<body>
+    <%-include ("partials/navbar.ejs") %>
+    <div class="container">
+        <div class="card" id="formulario-pergunta">
+            <div class="card-header">
+            </div>
+
+            <div class="card-body">
+                <form method="POST" action="/atualizarcliente">
+                    <label><p>Nome</p></label>
+                        <input type="text" placeholder="Nome" class="form-control" name="name">
+                        <br><label>CPF</label>
+                        <input type="number" placeholder="CPF" class="form-control" name="cpf">
+                        <br>
+                        <label>Endereço</label>
+                        <input type="text" placeholder="Endereço" class="form-control" name="endereco">
+                        <br>
+                        <a href="/atualizarcliente"><button class="btn btn-primary">Cadastrar</button></a>
+                </form> 
+                <br>   
+                
+            </div>
+            
+                
+        </div>
+    </div>
+</body>
+<%-include ("partials/footer.ejs") %>
